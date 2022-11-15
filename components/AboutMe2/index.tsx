@@ -26,10 +26,10 @@ export default function AboutMe2({ children }: any) {
                             About Me
                         </h1>
                     </div>
-                    <div className='row-span-3 flex bg-white w-full h-full justify-center items-center text-black'>
-                        <div className='flex w-[60%] h-[50%] pb-[3%] pt-[3%] bg-gray-100 font-san text-black justify-center items-buttom transition duration-[1000ms] hover:scale-125 ease-in shadow-2xl border-1 rounded-2xl overflow-y-scroll no-scrollbar '>
-                            {/* <div style={{ width : '500px', height: '400px', background: 'white', padding: ' 0 0 5rem 5rem'}}> */}
-                            <a className='' > นาย ญาณพัฒน์ พิษณุวัฒนศักดิ์ อายุ 22 ปี
+                    <div className='row-span-3 flex bg-white w-full h-full justify-center items-center text-black '>
+                        <div className='flex w-[60%] h-[50%] pb-[3%] pt-[3%] bg-gray-100 font-san text-black justify-center items-buttom transition duration-[1000ms] hover:scale-125 ease-in shadow-2xl rounded-2xl overflow-y-scroll no-scrollbar bg-gray-100'>
+                            <div className = 'overflow-y-scroll no-scrollbar h-full bg-gray-100' style={{  background: '#f3f4f6', padding: ' 1rem 0 3rem 0'}}>
+                            <a className='bg-gray-100' > นาย ญาณพัฒน์ พิษณุวัฒนศักดิ์ อายุ 22 ปี
                                 <br />เกิดวันที่ 1 กุมภาพันธ์ 2543
                                 <br />จบจาก มหาวิทยาลัย เกษตรศาสตร์ วิทยาเขตศรีราชา
                                 <br />คณะ วิศวกกรมคอมพิวเตอร์เเละสารสนเทศศาสตร์
@@ -44,14 +44,16 @@ export default function AboutMe2({ children }: any) {
                                 <br />เกิดวันที่ 1 กุมภาพันธ์ 2543
                                 <br />เกิดวันที่ 1 กุมภาพันธ์ 2543
                                 <br />เกิดวันที่ 1 กุมภาพันธ์ 2543
-                                <br />เกิดวันที่ 1 กุมภาพันธ์ 2543 </a>
+                                <br />เกิดวันที่ 1 กุมภาพันธ์ 2543 
+                            </a>
+                            </div>
 
 
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='col-span-2 flex flex-row w-full h-[20%] bg-white justify-center items-center text-black font-mono text-3xl space-x-100'>
+            <div className='col-span-2 flex flex-row w-full h-[20%] bg-white justify-center items-center text-black font-mono text-3xl space-x-100 mt-[-100px]'>
                 <Image
                     // loader={myLoader}
                     src={github}

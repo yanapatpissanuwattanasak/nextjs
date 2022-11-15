@@ -21,14 +21,8 @@ export default function Navgation(props: any) {
         <Link href="#intro" className={styles.child} >
           Home
         </Link>
-        <Link href="#aboutMe" className={styles.child} >
-          AboutMe
-        </Link>
-        <Link href="#course" className={styles.child} >
-          Course
-        </Link>
-        <Link href="#social" className={styles.child} >
-          Social
+        <Link href="/login" className={styles.child} >
+          Login
         </Link>
         <div className='flex flex-col text-black'>
         </div>

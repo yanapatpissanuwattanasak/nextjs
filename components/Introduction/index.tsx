@@ -13,7 +13,7 @@ export default function Introduction({ children }: any) {
         exit: { opacity: 0, x: 0, y: -100 }
     }
     return (
-        <div id='intro' className="flex  flex-col h-[97vh] bg-[#907971] justify-center items-center space-y-10 ">
+        <div id='intro' className="flex  flex-col h-[97vh] bg-[#f8e6b6] justify-center items-center space-y-10 ">
             {/* <div className="flex flex-col justify-center items-center space-y-10"> */}
             <div className="mt-[-100px] space-y-10">
                 <motion.div
@@ -24,7 +24,7 @@ export default function Introduction({ children }: any) {
                     transition={{ ease: "easeOut", duration: 1 }}
                     className="flex flex-col justify-center items-center "
                 >
-                    <h1 className="font-mono text-black hover:text-white subpixel-antialiased text-6xl font-bold transition duration-[1000ms] hover:scale-110 ease-out xl:text-shadow-xl">
+                    <h1 className="font-mono text-black subpixel-antialiased text-6xl font-bold transition duration-[1000ms] hover:scale-110 ease-out xl:text-shadow-xl ">
                         Wellcome To My Portfolio</h1>
                 </motion.div>
                 <motion.div

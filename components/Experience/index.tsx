@@ -82,34 +82,36 @@ export default function Experience({ children }: any) {
     return (
         <>
             <div id='course' className={style.container}>
-                <div className='mt-[50px]'>
+                <div className='mt-[50px]' >
                     <h1 className='font-mono text-black overscroll-x-contain hover:text-black subpixel-antialiased text-4xl font-bold transition duration-[1000ms] hover:scale-125 ease-out xl:text-shadow-xl text-center'> Course</h1>
                 </div>
-                <div className=' container flex flex-row flex-wrap pt-[100px] max-h-screen overflow-y-scroll justify-center items-center min-w-[800px]' >
-                    <div className='grid grid-cols-3 gap-4 min-w-[800px]'>
-                    {
-                        items.map((item, index) => {
+                <div className='flex justify-center items-center mt-[50px] h-[70vh] w-[100%] '>
+                <div className=' container w-[80%] h-[100%] flex flex-row flex-wrap  overflow-y-scroll justify-center items-center shadow-2xl rounded-xl no-scrollbar bg-white' >
+                    <div className='grid grid-cols-3 gap-4 min-w-[800px] '>
+                        {
+                            items.map((item, index) => {
 
-                            return <div key={index} className={style.space} >
-                                <div className={style.card}>
-                                    <Link target="_blank" className={item.status ? '' : 'pointer-events-none'} scroll={true} href={`${item.link}`}>
-                                        <div className={style.icon}>
-                                            <Image
-                                                src={item.image}
-                                                alt="Picture of the author"
-                                                width={200}
-                                                height={200}
-                                            ></Image>
+                                return <div key={index} className={style.space} >
+                                    <div className={style.card}>
+                                        <Link target="_blank" className={item.status ? '' : 'pointer-events-none'} scroll={true} href={`${item.link}`}>
+                                            <div className={style.icon}>
+                                                <Image
+                                                    src={item.image}
+                                                    alt="Picture of the author"
+                                                    width={200}
+                                                    height={200}
+                                                ></Image>
+                                            </div>
+                                        </Link>
+                                        <div className='mt-[30px]'>
+                                            <a className='font-mono text-black hover:text-black text-md'>{item.name}</a>
                                         </div>
-                                    </Link>
-                                    <div className='mt-[30px]'>
-                                        <a className='font-mono text-black hover:text-black text-md'>{item.name}</a>
                                     </div>
                                 </div>
-                            </div>
 
-                        })}
+                            })}
                     </div>
+                </div>
                 </div>
             </div>
             <div>
